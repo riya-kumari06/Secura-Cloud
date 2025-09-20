@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SecureOurCloud - Cloud Node Distribution</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0da6f2",
+        "background-light": "#f5f7f8",
+        "background-dark": "#101c22",
+      },
+      fontFamily: {
+        display: ["Poppins", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        full: "9999px"
+      },
+    },
+  },
+};
+</script>
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bg-gradient-custom {
+  background-image: linear-gradient(to bottom,
+      #101c22,
+      #13242c,
+      #162d36,
+      #193541,
+      #1c3e4c,
+      #204a5a,
+      #245769,
+      #286477,
+      #30758a,
+      #39879d,
+      #4399b0,
+      #4eacc3);
+}
+</style>
+</head>
+<body class="bg-gradient-custom font-display">
+<div class="relative flex min-h-screen w-full flex-col text-white">
+  <div class="flex h-full grow flex-col">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-background-dark/50 backdrop-blur-lg">
+      <nav class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-4 lg:px-10">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-primary text-4xl">security</span>
+          <h1 class="text-2xl font-bold">SecureOurCloud</h1>
+        </div>
+        <div class="hidden items-center gap-8 md:flex">
+          <a class="text-lg font-bold text-white/70" href="index.html">Home</a>
+          <a class="text-lg font-bold text-white/70 hover:text-primary transition-colors" href="file-list.html">File List</a>
+          <a class="text-lg font-bold text-white/70 hover:text-primary transition-colors" href="cloud-nodes.html">Cloud Nodes</a>
+          <a class="text-lg font-bold text-white/70 hover:text-primary transition-colors" href="contact.html">Contact Us</a>
+        </div>
+        <button class="md:hidden">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto flex flex-1 flex-col px-6 py-12 lg:px-10">
+      <div class="flex flex-col items-start gap-4">
+        <h2 class="text-2xl font-bold">Cloud Node Distribution</h2>
+        <p class="max-w-3xl text-base text-gray-300">
+          Explore the server distribution of your files across our secure cloud network. Each server is represented below, showing its ID, storage usage, and the number of files stored.
+        </p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <!-- Server 1 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 1</h3>
+            <p class="text-sm text-gray-300">Storage Used: 75%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 75%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 1500</p>
+          </div>
+        </div>
+
+        <!-- Server 2 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 2</h3>
+            <p class="text-sm text-gray-300">Storage Used: 50%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 50%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 1000</p>
+          </div>
+        </div>
+
+        <!-- Server 3 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 3</h3>
+            <p class="text-sm text-gray-300">Storage Used: 25%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 25%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 500</p>
+          </div>
+        </div>
+
+        <!-- Server 4 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 4</h3>
+            <p class="text-sm text-gray-300">Storage Used: 90%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 90%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 1800</p>
+          </div>
+        </div>
+
+        <!-- Server 5 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 5</h3>
+            <p class="text-sm text-gray-300">Storage Used: 60%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 60%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 1200</p>
+          </div>
+        </div>
+
+        <!-- Server 6 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 6</h3>
+            <p class="text-sm text-gray-300">Storage Used: 40%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 40%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 800</p>
+          </div>
+        </div>
+
+        <!-- Server 7 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 7</h3>
+            <p class="text-sm text-gray-300">Storage Used: 85%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 85%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 1700</p>
+          </div>
+        </div>
+
+        <!-- Server 8 -->
+        <div class="rounded-lg bg-background-dark/30 p-4 backdrop-blur-sm transition-all hover:bg-background-dark/50">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-bold">Server 8</h3>
+            <p class="text-sm text-gray-300">Storage Used: 33%</p>
+            <div class="w-full rounded-full bg-background-dark/50">
+              <div class="h-2.5 rounded-full bg-primary" style="width: 33%"></div>
+            </div>
+            <p class="text-sm text-gray-300">Files Stored: 660</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-background-dark/50 py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm text-gray-400">© 2025 SecureOurCloud. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>

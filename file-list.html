@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secura Cloud - File List</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#3b82f6",
+        "secondary": "#1e293b",
+        "accent": "#60a5fa",
+        "neutral-light": "#f8fafc",
+        "neutral-dark": "#0f172a",
+        "text-light": "#e2e8f0",
+        "text-muted": "#64748b"
+      },
+      fontFamily: { "display": ["Poppins", "sans-serif"] }
+    }
+  }
+}
+</script>
+</head>
+<body class="font-display bg-neutral-dark text-text-light">
+<div class="flex flex-col min-h-screen">
+<header class="bg-secondary/50 backdrop-blur-sm sticky top-0 z-50">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">security</span>
+<h1 class="text-2xl font-bold text-text-light">Secura Cloud</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-lg font-bold text-white/70" href="index.html">Home</a>
+<a class="text-lg font-bold text-white/70 hover:text-primary transition-colors" href="file-list.html">File List</a>
+<a class="text-lg font-bold text-white/70 hover:text-primary transition-colors" href="cloud-nodes.html">Cloud Nodes</a>
+<a class="text-lg font-bold text-white/70 hover:text-primary transition-colors" href="contact.html">Contact Us</a>
+
+</div>
+<button class="md:hidden text-text-light">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+
+<main class="flex-grow container mx-auto px-6 py-12">
+<div class="bg-neutral-dark/50 rounded-lg p-8">
+<div class="mb-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">search</span>
+<input class="w-full bg-neutral-dark border border-secondary focus:ring-primary focus:border-primary rounded-full py-3 pl-12 pr-4 text-text-light placeholder-text-muted transition-all" placeholder="Search files..." type="text"/>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="border-b border-secondary">
+<tr>
+<th class="p-4 text-lg font-semibold">File Name</th>
+<th class="p-4 text-lg font-semibold">Upload Date</th>
+<th class="p-4 text-lg font-semibold">Status</th>
+<th class="p-4"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-secondary/50">
+<td class="p-4">Document_1.pdf</td>
+<td class="p-4 text-text-muted">2024-01-15</td>
+<td class="p-4"><span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm font-semibold">Encrypted</span></td>
+<td class="p-4 text-right">
+<button class="bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download
+</button>
+</td>
+</tr>
+<tr class="bg-secondary/20 border-b border-secondary/50">
+<td class="p-4">Image_2.jpg</td>
+<td class="p-4 text-text-muted">2024-02-20</td>
+<td class="p-4"><span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-semibold">Uploaded</span></td>
+<td class="p-4 text-right">
+<button class="bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download
+</button>
+</td>
+</tr>
+<tr class="border-b border-secondary/50">
+<td class="p-4">Presentation_3.pptx</td>
+<td class="p-4 text-text-muted">2024-03-25</td>
+<td class="p-4"><span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm font-semibold">Encrypted</span></td>
+<td class="p-4 text-right">
+<button class="bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download
+</button>
+</td>
+</tr>
+<tr class="bg-secondary/20 border-b border-secondary/50">
+<td class="p-4">Spreadsheet_4.xlsx</td>
+<td class="p-4 text-text-muted">2024-04-30</td>
+<td class="p-4"><span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-semibold">Uploaded</span></td>
+<td class="p-4 text-right">
+<button class="bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download
+</button>
+</td>
+</tr>
+<tr>
+<td class="p-4">Video_5.mp4</td>
+<td class="p-4 text-text-muted">2024-05-05</td>
+<td class="p-4"><span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm font-semibold">Encrypted</span></td>
+<td class="p-4 text-right">
+<button class="bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded-lg transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">download</span> Download
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+
+<footer class="bg-secondary/50 py-6">
+<div class="container mx-auto px-6 text-center">
+<p class="text-sm text-text-muted">© 2025 Secura Cloud. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
